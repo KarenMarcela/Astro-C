@@ -129,10 +129,10 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
 			</div>
 		</header>
 		<div
-			class="banner  bg-[url(https://clan.akamai.steamstatic.com/images/32528477/1c54cd41a7e6a7a9f00adfbad0f5b38095460c0b.png)] bg-contain   bg-no-repeat bg-center h-[300px]  relative "
+			class="banner bg-[url(https://clan.akamai.steamstatic.com/images/32528477/1c54cd41a7e6a7a9f00adfbad0f5b38095460c0b.png)] bg-contain bg-no-repeat bg-center h-[300px] relative"
 		>
 			<menu
-				class="small-menu flex   mx-auto bg-blue-900/50 w-[70%]   relative top-[5%]  "
+				class="small-menu flex mx-auto bg-blue-900/50 w-[70%] relative top-[5%]"
 			>
 				<li
 					class="hover:bg-blue-800 hover:shadow-[0 10px 40px rgb(108, 108, 255)] inline-flex items-center pt-0 pr-[10px] pb-0 pl-[15px]"
@@ -182,9 +182,7 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
 						href="#">Laboratorios</a
 					>
 				</li>
-				<form
-					class="form-menu flex gap-2 p-2 duration-[0.5s]"
-				>
+				<form class="form-menu flex gap-2 p-2 duration-[0.5s]">
 					<div class="relative flex-grow">
 						<input
 							id="search"
@@ -194,65 +192,155 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
 						/>
 						<button
 							id="icon-search"
-							class=" bg-blue-100 absolute right-0 top-0 rounded-md"
+							class="bg-blue-100 absolute right-0 top-0 rounded-md"
 							type="submit"
-							><i class="fa-duotone fa-solid fa-magnifying-glass"></i>
+							><i class="fa-duotone fa-solid fa-magnifying-glass"
+							></i>
 						</button>
 					</div>
 				</form>
 			</menu>
 		</div>
-		<div class="left-menu float-left z-10 bg-blue-950 w-[250px] h-[360px] ml-5 sticky top-0">
-			<img src="https://store.akamai.steamstatic.com/public/images//gift/steamcards_promo_03.png?v=1" alt="Imagen-Tarjetas de regalo">
-			<h2 class="font-semibold font-sans  text-blue-800 hover:text-blue-700">TARJETAS REGALO DE STEAM</h2>
-			<p class="font-semibold font-sans  text-[16px] text-blue-900 hover:text-blue-700  cursor-pointer">Regala la diversión</p>
-			<h2 class="font-semibold mt-[16px] font-sans  text-blue-800 hover:text-blue-700">VISTOS RECIENTEMENTE</h2>
-			<p class=" font-semibold font-sans  text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer">Amigos</p>
-			<p class="mt-[-6px] font-semibold font-sans  text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer">Mentores</p>
-			<p class="mt-[-6px] font-semibold font-sans  text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer">Etiquetas</p>
-			<h2 class="font-semibold mt-[16px] font-sans  text-blue-800 hover:text-blue-700">EXPLORAR CATEGORÍAS</h2>
-			<p class=" font-semibold font-sans  text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer">Lo más vendido</p>
-			<p class="mt-[-6px] font-semibold font-sans  text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer">Novedades</p>
-			<p class="mt-[-6px] font-semibold font-sans  text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer">Proximamente</p>
-			
+		<div
+			class="left-menu float-left z-10 bg-blue-950 w-[250px] h-[360px] ml-5 sticky top-0"
+		>
+			<img
+				src="https://store.akamai.steamstatic.com/public/images//gift/steamcards_promo_03.png?v=1"
+				alt="Imagen-Tarjetas de regalo"
+			/>
+			<h2
+				class="font-semibold font-sans text-blue-800 hover:text-blue-700"
+			>
+				TARJETAS REGALO DE STEAM
+			</h2>
+			<p
+				class="font-semibold font-sans text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer"
+			>
+				Regala la diversión
+			</p>
+			<h2
+				class="font-semibold mt-[16px] font-sans text-blue-800 hover:text-blue-700"
+			>
+				VISTOS RECIENTEMENTE
+			</h2>
+			<p
+				class="font-semibold font-sans text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer"
+			>
+				Amigos
+			</p>
+			<p
+				class="mt-[-6px] font-semibold font-sans text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer"
+			>
+				Mentores
+			</p>
+			<p
+				class="mt-[-6px] font-semibold font-sans text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer"
+			>
+				Etiquetas
+			</p>
+			<h2
+				class="font-semibold mt-[16px] font-sans text-blue-800 hover:text-blue-700"
+			>
+				EXPLORAR CATEGORÍAS
+			</h2>
+			<p
+				class="font-semibold font-sans text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer"
+			>
+				Lo más vendido
+			</p>
+			<p
+				class="mt-[-6px] font-semibold font-sans text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer"
+			>
+				Novedades
+			</p>
+			<p
+				class="mt-[-6px] font-semibold font-sans text-[16px] text-blue-900 hover:text-blue-700 cursor-pointer"
+			>
+				Proximamente
+			</p>
 		</div>
-		<div class="banner2  bg-blue-950 h-[470px] w-full max-w-[1200px] mx-auto">
-			<h2 class="text-white text-center pt-5 pb-2">DESTACADOS Y RECOMENDADOS</h2>
-			<div class="container flex bg-yellow-500 relative  w-full max-w-[70%] mx-auto mt-4">
-				<div class="caroulser h-[360px] max-w-[55%]  overflow-hidden">
-					<img src="https://sm.ign.com/t/ign_es/screenshot/default/biggest-games-2023-1671751913499_mwmj.1280.jpg" alt="Imgen1" class=" w-full h-full object-cover">
+		<div
+			class="banner2 bg-blue-950 h-[470px] w-full max-w-[1200px] mx-auto"
+		>
+			<h2 class="text-white text-center pt-5 pb-2">
+				DESTACADOS Y RECOMENDADOS
+			</h2>
+			<div
+				class="container flex bg-yellow-500 relative w-full max-w-[70%] mx-auto mt-4"
+			>
+				<div class="caroulser h-[360px] max-w-[55%] overflow-hidden">
+					<img
+						src="https://sm.ign.com/t/ign_es/screenshot/default/biggest-games-2023-1671751913499_mwmj.1280.jpg"
+						alt="Imgen1"
+						class="w-full h-full object-cover"
+					/>
 				</div>
-				<div class="options flex flex-wrap bg-red-600 relative max-w-[50%] h-[360px] overflow-hidden">
+				<div
+					class="options flex flex-wrap bg-red-600 relative max-w-[50%] h-[360px] overflow-hidden"
+				>
 					<div class="1 w-1/2 h-1/2">
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQuSbyK3y6tS-AWldB_FZqe1zdBgW97ERmQ&s" alt="imagen2" class=" w-full h-full object-cover">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQuSbyK3y6tS-AWldB_FZqe1zdBgW97ERmQ&s"
+							alt="imagen2"
+							class="w-full h-full object-cover"
+						/>
 					</div>
 					<div class="2 w-1/2 h-1/2">
-						<img src="https://i.blogs.es/c140f1/3446535-supermarioparty-review-thumbnologo/1366_2000.jpeg" alt="" class=" w-full h-full object-cover">
+						<img
+							src="https://i.blogs.es/c140f1/3446535-supermarioparty-review-thumbnologo/1366_2000.jpeg"
+							alt=""
+							class="w-full h-full object-cover"
+						/>
 					</div>
 					<div class="3 w-1/2 h-1/2">
-						<img src="https://i.blogs.es/b7f847/tortugas/375_375.webp" alt="">
+						<img
+							src="https://i.blogs.es/b7f847/tortugas/375_375.webp"
+							alt=""
+						/>
 					</div>
 					<div class="4 w-1/2 h-1/2">
-						<img src="https://img.utdstc.com/screen/08b/541/08b5416dbe9366941d6f55f15a72c51e49c1d4a65dd212fc259342600a4e8bd1:400" alt="" class=" w-full h-full object-cover">
+						<img
+							src="https://img.utdstc.com/screen/08b/541/08b5416dbe9366941d6f55f15a72c51e49c1d4a65dd212fc259342600a4e8bd1:400"
+							alt=""
+							class="w-full h-full object-cover"
+						/>
 					</div>
 				</div>
 			</div>
 		</div>
-		<h1 class="text-white text-[15px] ml-[280px] ">EXPLORAR POR CATEGORÍA</h1>
-		<div class="banner3 h-[500px] flex flex-row space-x-2 justify-center items-center ml-[180px]">
-			<div class="bg-blue-400/50  w-[320px] h-[400px]">
+		<h1 class="text-white text-[15px] ml-[280px]">
+			EXPLORAR POR CATEGORÍA
+		</h1>
+		<div
+			class="banner3 h-[500px] flex flex-row space-x-2 justify-center items-center ml-[180px]"
+		>
+			<div class="bg-blue-400/50 w-[320px] h-[400px]">
 				<div>
-					<img class="w-[320px]" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/029a4d7c0e9c1c957a899546/spotlight_image_english.jpg?t=1726600160" alt="imagenjuego">
+					<img
+						class="w-[320px]"
+						src="https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/029a4d7c0e9c1c957a899546/spotlight_image_english.jpg?t=1726600160"
+						alt="imagenjuego"
+					/>
 				</div>
-				<div >
-					<h1 class="ml-[20px] font-medium text-white">OFERTA DEL FIN DE SEMANA</h1>
-					<h3 class="ml-[20px] text-gray-700">La oferta termina el 8 de OCT a las 12:00</h3>
-					<div class="flex flex-row w-[180px] h-[50px] ml-[20px] ">
+				<div>
+					<h1 class="ml-[20px] font-medium text-white">
+						OFERTA DEL FIN DE SEMANA
+					</h1>
+					<h3 class="ml-[20px] text-gray-700">
+						La oferta termina el 8 de OCT a las 12:00
+					</h3>
+					<div class="flex flex-row w-[180px] h-[50px] ml-[20px]">
 						<div class="">
-							<h1 class="h-[50px]  text-[26px] text-green-300 bg-green-600 px-1">-43%</h1>
+							<h1
+								class="h-[50px] text-[26px] text-green-300 bg-green-600 px-1"
+							>
+								-43%
+							</h1>
 						</div>
-						<div class="bg-gray-700 px-1 leading-[14px] "> 
-							<h3 class="text-[12px] ml-[24px] pt-1 line-through">COL$ 234.900</h3>
+						<div class="bg-gray-700 px-1 leading-[14px]">
+							<h3 class="text-[12px] ml-[24px] pt-1 line-through">
+								COL$ 234.900
+							</h3>
 							<h2 class="text-green-500">COL$ 133.893</h2>
 						</div>
 					</div>
@@ -260,74 +348,143 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
 			</div>
 			<div class="bg-blue-400/50 w-[320px] h-[400px]">
 				<div>
-					<img class="w-[320px]" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/3efceac6f41b10dd0b6556ce/spotlight_image_spanish.jpg?t=1727198442" alt="imagenjuego">
+					<img
+						class="w-[320px]"
+						src="https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/3efceac6f41b10dd0b6556ce/spotlight_image_spanish.jpg?t=1727198442"
+						alt="imagenjuego"
+					/>
 				</div>
-				<div >
-					<h1 class="ml-[20px] font-medium text-white">OFERTA DEL FIN DE SEMANA</h1>
-					<h3 class="ml-[20px] text-gray-700">La oferta termina el 8 de OCT a las 12:00</h3>
-					<div class="flex flex-row w-[180px] h-[50px] ml-[20px] ">
+				<div>
+					<h1 class="ml-[20px] font-medium text-white">
+						OFERTA DEL FIN DE SEMANA
+					</h1>
+					<h3 class="ml-[20px] text-gray-700">
+						La oferta termina el 8 de OCT a las 12:00
+					</h3>
+					<div class="flex flex-row w-[180px] h-[50px] ml-[20px]">
 						<div class="">
-							<h1 class="h-[50px]  text-[26px] text-green-300 bg-green-600 px-1">-43%</h1>
+							<h1
+								class="h-[50px] text-[26px] text-green-300 bg-green-600 px-1"
+							>
+								-43%
+							</h1>
 						</div>
-						<div class="bg-gray-700 px-1 leading-[14px] "> 
-							<h3 class="text-[12px] ml-[24px] pt-1 line-through">COL$ 234.900</h3>
+						<div class="bg-gray-700 px-1 leading-[14px]">
+							<h3 class="text-[12px] ml-[24px] pt-1 line-through">
+								COL$ 234.900
+							</h3>
 							<h2 class="text-green-500">COL$ 133.893</h2>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="bg-blue-400/50 w-[320px] h-[400px] space-y-4">
-				<div class=" ">
-					<div >
-						<img class="w-[320px]" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/269110/header.jpg?t=1576182011" alt="">
+				<div class="">
+					<div>
+						<img
+							class="w-[320px]"
+							src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/269110/header.jpg?t=1576182011"
+							alt=""
+						/>
 					</div>
-					<div class="bg-blue-300 flex flex-row ">
+					<div class="bg-blue-300 flex flex-row">
 						<h3>¡Oferta del dia!</h3>
-						<div class="flex flex-row w-[180px] h-auto ml-[20px] ">
+						<div class="flex flex-row w-[180px] h-auto ml-[20px]">
 							<div class="">
-								<h1 class="h-[40px]  text-[26px] text-green-300 bg-green-600 px-1">-43%</h1>
+								<h1
+									class="h-[40px] text-[26px] text-green-300 bg-green-600 px-1"
+								>
+									-43%
+								</h1>
 							</div>
-							<div class="bg-gray-700 px-1 h-[40px] leading-[14px]"> 
-								<h3 class="text-[12px] ml-[24px] pt-1 line-through">COL$ 234.900</h3>
+							<div
+								class="bg-gray-700 px-1 h-[40px] leading-[14px]"
+							>
+								<h3
+									class="text-[12px] ml-[24px] pt-1 line-through"
+								>
+									COL$ 234.900
+								</h3>
 								<h2 class="text-green-500">COL$ 133.893</h2>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class=" ">
-					<div >
-						<img class="w-[320px]" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/301970/header.jpg?t=1727490209" alt="">
+				<div class="">
+					<div>
+						<img
+							class="w-[320px]"
+							src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/301970/header.jpg?t=1727490209"
+							alt=""
+						/>
 					</div>
-					<div class="bg-blue-300 flex flex-row ">
+					<div class="bg-blue-300 flex flex-row">
 						<h3>¡Oferta del dia!</h3>
-						<div class="flex flex-row w-[180px] h-auto ml-[20px] ">
+						<div class="flex flex-row w-[180px] h-auto ml-[20px]">
 							<div class="">
-								<h1 class="h-[40px]  text-[26px] text-green-300 bg-green-600 px-1">-43%</h1>
+								<h1
+									class="h-[40px] text-[26px] text-green-300 bg-green-600 px-1"
+								>
+									-43%
+								</h1>
 							</div>
-							<div class="bg-gray-700 px-1 h-[40px] leading-[14px]"> 
-								<h3 class="text-[12px] ml-[24px] pt-1 line-through">COL$ 234.900</h3>
+							<div
+								class="bg-gray-700 px-1 h-[40px] leading-[14px]"
+							>
+								<h3
+									class="text-[12px] ml-[24px] pt-1 line-through"
+								>
+									COL$ 234.900
+								</h3>
 								<h2 class="text-green-500">COL$ 133.893</h2>
 							</div>
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 
-		<h1 class="text-white text-[15px] ml-[280px]">EXPLORAR POR CATEGORÍA</h1>
-		<div class="banner4  h-[300px] flex flex-row space-x-3 justify-center ml-[290px] mt-[20px]">
-			<div class=" hover:scale-105 duration-300 hover:shadow-2xl w-[250px] h-[250px]  bg-[url(https://store.steampowered.com/categories/homepageimage/category/science_fiction?cc=us&l=spanish)] bg-contain bg-no-repeat">
-				<h1 class="font-semibold  text-[20px] text-red-950 text-center pt-[180px]" >ACCIÓN</h1>
+		<h1 class="text-white text-[15px] ml-[280px]">
+			EXPLORAR POR CATEGORÍA
+		</h1>
+		<div
+			class="banner4 h-[300px] flex flex-row space-x-3 justify-center ml-[290px] mt-[20px]"
+		>
+			<div
+				class="hover:scale-105 duration-300 hover:shadow-2xl w-[250px] h-[250px] bg-[url(https://store.steampowered.com/categories/homepageimage/category/science_fiction?cc=us&l=spanish)] bg-contain bg-no-repeat"
+			>
+				<h1
+					class="font-semibold text-[20px] text-red-950 text-center pt-[180px]"
+				>
+					ACCIÓN
+				</h1>
 			</div>
-			<div class=" hover:scale-105 duration-300 hover:shadow-2xl w-[250px] h-[250px] bg-[url(https://store.steampowered.com/categories/homepageimage/category/puzzle_matching/?cc=us&l=spanish)] bg-contain bg-no-repeat">
-				<h1 class="font-semibold  text-[20px] text-red-950 text-center pt-[180px]" >PUZLES</h1>
+			<div
+				class="hover:scale-105 duration-300 hover:shadow-2xl w-[250px] h-[250px] bg-[url(https://store.steampowered.com/categories/homepageimage/category/puzzle_matching/?cc=us&l=spanish)] bg-contain bg-no-repeat"
+			>
+				<h1
+					class="font-semibold text-[20px] text-red-950 text-center pt-[180px]"
+				>
+					PUZLES
+				</h1>
 			</div>
-			<div class=" hover:scale-105 duration-300 hover:shadow-2xl w-[250px] h-[250px] bg-[url(https://store.steampowered.com/categories/homepageimage/category/horror?cc=us&l=spanish)] bg-contain bg-no-repeat">
-				<h1 class="font-semibold  text-[20px] text-red-950 text-center pt-[180px]" >TERROR</h1>
+			<div
+				class="hover:scale-105 duration-300 hover:shadow-2xl w-[250px] h-[250px] bg-[url(https://store.steampowered.com/categories/homepageimage/category/horror?cc=us&l=spanish)] bg-contain bg-no-repeat"
+			>
+				<h1
+					class="font-semibold text-[20px] text-red-950 text-center pt-[180px]"
+				>
+					TERROR
+				</h1>
 			</div>
-			<div class=" hover:scale-105 duration-300 hover:shadow-2xl w-[250px] h-[250px] bg-[url(https://store.steampowered.com/categories/homepageimage/category/anime?cc=us&l=spanish)] bg-contain bg-no-repeat">
-				<h1 class="font-semibold  text-[20px] text-red-950 text-center pt-[180px]" >ANIME</h1>
+			<div
+				class="hover:scale-105 duration-300 hover:shadow-2xl w-[250px] h-[250px] bg-[url(https://store.steampowered.com/categories/homepageimage/category/anime?cc=us&l=spanish)] bg-contain bg-no-repeat"
+			>
+				<h1
+					class="font-semibold text-[20px] text-red-950 text-center pt-[180px]"
+				>
+					ANIME
+				</h1>
 			</div>
 		</div>
 
@@ -365,6 +522,77 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
 			</svg>
 		</div> -->
 	</body>
+	<footer>
+		<div class="bg-black leading-10 h-[200px]">
+			<h1 class="text-blue-700 text-center">
+				¿Buscando recomendaciones?
+			</h1>
+			<h3 class="text-white text-center">
+				Inicia sesión para ver recomendaciones personalizadas
+			</h3>
+			<button
+				class="bg-green-500 flex mx-auto mt-[20px] px-2 rounded-lg hover:bg-green-400 cursor-pointer"
+				>Iniciar sesión</button
+			>
+			<div class="flex mx-auto justify-center">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="size-6 text-white mr-[10px] mt-[10px] hover:animate-spin cursor-pointer"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+					></path>
+				</svg>
+				<a class="text-yellow-50/80 hover:text-white" href="#"
+					>regístrate</a
+				>
+				<p class="ml-[10px] text-yellow-50/30">
+					y unete a Steam de forma gratuita
+				</p>
+			</div>
+		</div>
+		<div class="h-[300px] w-[1000px] flex mx-auto">
+			<div class="border-t border-b border-gray-600 mt-[15px] h-[160px]">
+				<div class="relative">
+					<img
+						class="absolute top-0 right-0"
+						src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png"
+						alt="imagen de logo"
+					/>
+				</div>
+				<img
+						class="h-[30px] mt-[10px]"
+						src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png "
+						alt=""
+					/>
+					<p class="text-gray-500">
+						© 2024 Valve Corporation. Todos los derechos
+						reservados. Todas las marcas registradas pertenecen a
+						sus respectivos dueños en EE. UU. y otros países.
+					</p>
+				<div class="flex flex-row">
+					<p class="text-gray-500">Todos
+						los precios incluyen IVA (donde sea aplicable).</p>
+					<div>
+						<a
+							class="text-gray-500 hover:text-white duration-300 ml-[20px]"
+							href="#">Política de privacidad</a
+						>
+						|
+						<a
+							class="text-gray-500 hover:text-white duration-300 ml-[10px]"
+							href="#">Política de privacidad</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <a class="text-white mx-auto flex justify-center py-[10px] cursor-pointer" href="#">regístrate <p class="ml-[5px]"> y unete a Steam de forma gratuita</p> </a> -->
+	</footer>
 </html>
-
-
